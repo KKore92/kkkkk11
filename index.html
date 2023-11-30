@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.3.1/dist/aframe-environment-component.min.js"></script>
+  </head>
+  
+  <body>
+    <a-scene>
+
+    <a-entity environment= 
+    "preset: osiris;
+    seed: 2;
+    skyType: gradient; 
+    skyColor: black; 
+    horizonColor: black;
+    lighting: distant;
+    lightPosition: 0.2;
+    ground: hills;
+    groundYScale: 30;
+    groundTexture: none;
+    groundColor: white;
+    groundColor2: white;
+    groundColor3: white;
+    dressing: arches;
+    dressingAmount: 5;
+    dressingScale: 5;
+    dressingVariance: 5 7 5;
+    dressingColor: grey;
+    grid: xlines;
+    gridColor: yellow;
+    fog:0;"></a-entity>
+
+    <a-sphere color="#black" scale="80 80 80" position="0 100 0" rotation="45 45 45"> </a-sphere>
+  
+    <a-light type="point" intensity="" color="blue" position="-5 8 0"></a-light>
+
+    <a-light type="point" intensity="5" color="pink" position="-20 18 0"></a-light>
+
+    <a-light type="point" intensity="5" color="green" position="20 8 -10"></a-light>
+
+    <a-light type="point" intensity="8" color="yellow" position="-30 8 -35"></a-light>
+
+    <a-camera position="0 10 0"></a-camera>
+   
+  </a-scene>
+  </body>
+</html>
